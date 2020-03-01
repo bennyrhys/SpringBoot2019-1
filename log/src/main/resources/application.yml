@@ -1,0 +1,34 @@
+server:
+  port: 8086
+#student:
+#  sName: zhangsan
+#  sAge: 18
+#  sBrith: 1998/07/19
+#  sBoss: false
+#  maps: {k1: v1,k2: 12}
+#  lists:
+#    - 张三
+#    - 李四
+#    - 王二
+#  dog:
+#    name: 杰克
+#    age: 3
+spring:
+  profiles:
+    active: prod
+---
+server:
+  port: 8087
+spring:
+  profiles: dev
+
+---
+server:
+  port: 8088
+
+
+spring:
+  profiles: prod
+
+#查看哪些自动配置启用
+#debug: true
